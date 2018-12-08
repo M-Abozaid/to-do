@@ -1,0 +1,38 @@
+{
+  "name": "to-do",
+  "version": "1.0.0",
+  "author": {
+    "name": "Muhammed Abuzaid",
+    "email": "aapozaid@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m-abozaid/to-do.git"
+  },
+  "private": true,
+  "scripts": {
+    "start": "node ./src/bin/www",
+    "test": "mocha --timeout 120000"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "connect-mongo": "^2.0.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "express-session": "^1.15.6",
+    "hbs": "~4.0.1",
+    "joi": "^14.3.0",
+    "lodash": "^4.17.11",
+    "morgan": "~1.9.0",
+    "passport": "^0.4.0",
+    "passport-local-mongoose": "^5.0.1",
+    "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "mocha": "^5.2.0",
+    "mockgoose": "^7.3.5"
+  }
+}
