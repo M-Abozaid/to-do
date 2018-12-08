@@ -58,7 +58,9 @@ router.post("/", async function(req, res, next) {
 router.get("/:id", async function(req, res, next) {
   // return only tasks created by the current user
   let [err, list] = await to(
-    List.findOne({ creator: req.user._id }).populate("tasks")
+    List.findOne({ _id: req.params.id, creator: req.user._id }).populate(
+      "tasks"
+    )
   );
 
   if (err) {
